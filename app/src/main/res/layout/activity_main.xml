@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="675dp"
+        android:layout_above="@id/layoutMusic"
+        app:defaultNavHost="true" />
+
+    <LinearLayout
+        android:id="@+id/layoutMusic"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:layout_above="@id/nav_view"
+        android:background="#2E2E2E"
+        android:layout_marginBottom="1dp">
+
+        <ImageView
+            android:id="@+id/imgID"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img"/>
+
+        <LinearLayout
+            android:id="@+id/txtNomMusicID"
+            android:layout_width="227dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gothamblack"
+                android:text="3arbouch"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nordo"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/gothamlight"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buFav2ID"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_favorite_border" />
+
+        <Button
+            android:id="@+id/buPlay2ID"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_baseline_play" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:background="#2E2E2E"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_alignParentBottom="true" />
+
+
+
+</RelativeLayout>

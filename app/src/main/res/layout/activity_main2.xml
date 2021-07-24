@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@drawable/back_app"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buBackID"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_arrow_down"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="58dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lecture à partir de playlist"
+                android:textSize="11sp"
+                android:textColor="#fff"
+                android:textAllCaps="true"
+                android:fontFamily="@font/gothamlight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Hits North Africa"
+                android:textSize="12sp"
+                android:textColor="#fff"
+                android:fontFamily="@font/gothamblack"
+                android:layout_marginTop="1dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/ic_plus_svg" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/img"
+        android:layout_marginTop="60dp"/>
+
+    <RelativeLayout
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3arbouch"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:fontFamily="@font/gothamblack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nordo"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/gothamlight"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buFavID"
+            android:layout_marginTop="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seekBarID"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:progressTint="#fff"
+        android:thumbTint="#fff" />
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtTempsID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textColor="#fff"
+            android:fontFamily="@font/gothamlight"/>
+
+        <TextView
+            android:id="@+id/txtDuréeID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/gothamlight" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="7dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_shuffle"
+            android:layout_marginRight="40dp"/>
+
+        <Button
+            android:id="@+id/buPrevID"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_skip_previous"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/buPlayID"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_play"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/buNextID"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_skip_next"
+            android:layout_marginRight="40dp"/>
+
+        <Button
+            android:id="@+id/buRepID"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_repeat"/>
+    </LinearLayout>
+
+</LinearLayout>

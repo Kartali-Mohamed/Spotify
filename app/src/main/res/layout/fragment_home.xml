@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="#121212"
+    android:padding="10dp">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Bonsoir"
+               android:textColor="#fff"
+               android:textSize="23dp"
+               android:textStyle="bold"/>
+
+           <Button
+               android:layout_width="25dp"
+               android:layout_height="25dp"
+               android:background="@drawable/ic_settings"
+               android:layout_alignParentRight="true"
+               android:layout_marginTop="2dp"/>
+
+       </RelativeLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="25dp">
+
+           <ImageView
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:src="@drawable/zedk"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_gravity="center"
+               android:layout_marginLeft="7dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Hot Hits"
+                   android:textColor="#fff"
+                   android:textSize="15dp"
+                   android:textStyle="bold"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Maghreb"
+                   android:textColor="#fff"
+                   android:textSize="15dp"
+                   android:textStyle="bold"/>
+
+           </LinearLayout>
+
+           <ImageView
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:src="@drawable/daily"
+               android:layout_marginLeft="70dp"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_gravity="center"
+               android:layout_marginLeft="7dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Daily Mix 1"
+                   android:textColor="#fff"
+                   android:textSize="15dp"
+                   android:textStyle="bold"/>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Essayer autre chose"
+           android:textColor="#fff"
+           android:textSize="23dp"
+           android:layout_marginTop="40dp"
+           android:textStyle="bold"/>
+
+       <HorizontalScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:scrollbarSize="0dp">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:orientation="horizontal" >
+
+               <Button
+                   android:layout_width="160dp"
+                   android:layout_height="200dp"
+                   android:background="@drawable/ghonia"/>
+
+               <Button
+                   android:layout_width="160dp"
+                   android:layout_height="200dp"
+                   android:background="@drawable/hiphop"
+                   android:layout_marginLeft="15dp"/>
+
+               <Button
+                   android:layout_width="160dp"
+                   android:layout_height="200dp"
+                   android:background="@drawable/ray"
+                   android:layout_marginLeft="15dp"/>
+
+               <Button
+                   android:layout_width="160dp"
+                   android:layout_height="200dp"
+                   android:background="@drawable/hip"
+                   android:layout_marginLeft="15dp"/>
+
+           </LinearLayout>
+
+       </HorizontalScrollView>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Ambiances mélancolique"
+           android:textColor="#fff"
+           android:textSize="23dp"
+           android:layout_marginTop="40dp"
+           android:textStyle="bold"/>
+
+       <HorizontalScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:scrollbarSize="0dp">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:orientation="horizontal" >
+
+               <Button
+                   android:layout_width="160dp"
+                   android:layout_height="200dp"
+                   android:background="@drawable/bops"/>
+
+               <Button
+                   android:layout_width="160dp"
+                   android:layout_height="200dp"
+                   android:background="@drawable/hour"
+                   android:layout_marginLeft="15dp"/>
+
+               <Button
+                   android:layout_width="160dp"
+                   android:layout_height="200dp"
+                   android:background="@drawable/alone"
+                   android:layout_marginLeft="15dp"/>
+
+               <Button
+                   android:layout_width="160dp"
+                   android:layout_height="200dp"
+                   android:background="@drawable/covers"
+                   android:layout_marginLeft="15dp"/>
+
+               <Button
+                   android:layout_width="160dp"
+                   android:layout_height="200dp"
+                   android:background="@drawable/warm"
+                   android:layout_marginLeft="15dp"/>
+
+           </LinearLayout>
+
+       </HorizontalScrollView>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Classements"
+           android:textColor="#fff"
+           android:textSize="23dp"
+           android:layout_marginTop="40dp"
+           android:textStyle="bold"/>
+
+       <HorizontalScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:scrollbarSize="0dp">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:orientation="horizontal" >
+
+               <Button
+                   android:layout_width="160dp"
+                   android:layout_height="200dp"
+                   android:background="@drawable/top"/>
+
+               <Button
+                   android:layout_width="160dp"
+                   android:layout_height="200dp"
+                   android:background="@drawable/monde"
+                   android:layout_marginLeft="15dp"/>
+
+               <Button
+                   android:layout_width="160dp"
+                   android:layout_height="200dp"
+                   android:background="@drawable/hits"
+                   android:layout_marginLeft="15dp"/>
+
+           </LinearLayout>
+
+       </HorizontalScrollView>
+   </LinearLayout>
+
+</ScrollView>
